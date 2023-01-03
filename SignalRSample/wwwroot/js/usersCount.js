@@ -16,9 +16,10 @@ function newWindowLoadedOnClient() {
 function fulfilled() {
     //do something on start
     console.log("Connection to User Hub Successful");
+    newWindowLoadedOnClient();
 }
 function rejected() {
-    //rejected logs
+    //rejected logs 
 }
 
 connectionUserCount.start().then(fulfilled, rejected);
